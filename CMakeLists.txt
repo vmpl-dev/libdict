@@ -36,10 +36,10 @@ include_directories(
 # 创建共享库
 add_library(dict SHARED ${SOURCES})
 
-# 设置版本号
+# 设置版本号（与 GNUmakefile 保持一致，使用版本 2）
 set_target_properties(dict PROPERTIES
-    VERSION ${PROJECT_VERSION}
-    SOVERSION 1
+    VERSION 2.0.0
+    SOVERSION 2
 )
 
 # 安装规则
